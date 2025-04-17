@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #FEF9EF;
+}
+
+
+.courses {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+}
+
+
+.header {
+  margin-bottom: auto;
+  display: flex;
+  position: relative;
+  background-color: #FE6D73 ;
+  width: 100%;
+  padding: 50px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header a {
+  color: black;
+      font-size: 1.4rem;
+      text-decoration: none;
+}
+
+.header div {
+  display: flex;
+      gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #17C3B2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #227C9D;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #227C9D;
+}
+
+/* ----- RESPONSIV DESIGN ----- */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  #header-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 1rem;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  input, select, button {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  li button {
+    align-self: flex-end;
+  }
+}
